@@ -1,0 +1,20 @@
+.task-container {
+  background: black;
+  padding: 2%;
+}
+.task-item-container {
+  display: flex;
+}
+.task-card-container {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.strike {
+  text-decoration: line-through;
+}
+.delete-btn {
+  cursor: pointer;
+}

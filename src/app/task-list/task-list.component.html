@@ -1,0 +1,11 @@
+<mat-card class="task-container">
+  <mat-list>
+    <mat-card class="task-card-container" *ngFor="let task of tasks">
+      <mat-list-item [ngClass]="{'strike' : task.status }">
+        {{task.title}}
+      </mat-list-item>
+      <mat-checkbox [(ngModel)]="task.status"></mat-checkbox>
+      <mat-icon class="delete-btn" (click)="deleteTask(task)" fontIcon="delete"></mat-icon>
+    </mat-card>
+  </mat-list>
+</mat-card>
